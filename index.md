@@ -34,8 +34,11 @@ is just to replay events, have a look at evemu:
 [http://wiki.freedesktop.org/wiki/Evemu](http://wiki.freedesktop.org/wiki/Evemu)
 
 ## Getting it:
+
+#### Fedora
 If you are running Fedora, see our packages [here](Fedora.html).
 
+#### From the source
 If you want to compile from the source:
 
 	$> git clone https://github.com/bentiss/hid-replay.git

@@ -43,7 +43,8 @@ If you want to compile from the source:
 
 	$> git clone https://github.com/bentiss/hid-replay.git
 	$> cd hid-replay
-	$> ./autogen --prefix=/usr
+	$> ./autogen.sh
+	$> ./configure --prefix=/usr
 	$> make && sudo make install
 
 ## Running HID-replay:

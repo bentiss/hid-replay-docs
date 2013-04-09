@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hid-replay by bentiss</title>
+    <title>{{ page.title }}</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -30,17 +30,7 @@
 
       </header>
       <section>
-        <h3>HID replay - HID recorder</h3>
-
-<p>This program allow users to capture hidraw events and then
-replay them through the uhid kernel module.</p>
-
-<p>In order to replay the HID events, you will need to load the
-module uhid which is available in kernels v3.6+.</p>
-
-<p>This is mainly for debugging kernel drivers. If your goal
-is just to replay events, have a look at evemu:
-<a href="http://wiki.freedesktop.org/wiki/Evemu">http://wiki.freedesktop.org/wiki/Evemu</a></p>
+{{ content }}
       </section>
       <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>

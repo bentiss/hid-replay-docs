@@ -15,3 +15,7 @@ This is mainly for debugging kernel drivers. If your goal
 is just to replay events, have a look at evemu:
 [http://wiki.freedesktop.org/wiki/Evemu](http://wiki.freedesktop.org/wiki/Evemu)
 
+## Fedora packages:
+
+You can find some fedora packages here:
+[fedora packages](Fedora.html)

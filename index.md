@@ -54,17 +54,18 @@ If you want to compile from the source:
 *hid-recorder* is safe to be run on any kernel. All you need is to have a
 hid device plugged and the hidraw module loaded. The syntax is the
 following:
+	#> hid-recorder > mydevice.hid
+*hid-recorder* will show you a list of available devices, and will start
+recording the events.
+
+If you already know which hidraw node you want to record (to use it in a
+script for instance), you can use the following syntax:
 	#> hid-recorder /dev/hidrawN > mydevice.hid
 Where */dev/hidrawN* is a valid device (replace N by the correct number).
 
-If you ommit */dev/hidrawN* or if you don't know the right number, just run hid-recorder
-without arguments:
-	#> hid-recorder > mydevice.hid
-hid-recorder will show you a list of available devices.
-
 ### HID-replay:
 
-*hid-replay* may harm your kernel...
+#### *hid-replay* may (will) harm your kernel...
 
 If you are sure to want to run it, you need to have a at least a
 3.6 kernel and te module uhid loaded.

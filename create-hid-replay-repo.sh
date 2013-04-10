@@ -1,20 +1,38 @@
 #!/bin/sh
 
+args=$@
 current_dir=$(pwd)
 destdir=${current_dir}/repo
 archs="i686 x86_64 SRPMS"
 releases="17 18 19"
 md_target=${current_dir}/Fedora.md
 
-for release in $releases
+rebuild_repodata=1
+
+for arg in $args
 do
-	for arch in $archs
-	do
-		pushd ${destdir}/${release}/${arch} >/dev/null 2>&1
-		createrepo .
-		popd >/dev/null 2>&1
-	done
+	case "$arg" in
+		-h|--help)
+			echo "Usage: `basename $0` [OPTIONS...]"
+			echo "  -n, --norepo	Do not rebuild repodata, but only the `basename $md_target` target file."
+			exit 1;;
+		-n|--norepo)
+			rebuild_repodata=0;;
+	esac
 done
+
+if [[ x$rebuild_repodata == x1 ]]
+then
+	for release in $releases
+	do
+		for arch in $archs
+		do
+			pushd ${destdir}/${release}/${arch} >/dev/null 2>&1
+			createrepo .
+			popd >/dev/null 2>&1
+		done
+	done
+fi
 
 cat > ${md_target} <<EOF
 ---

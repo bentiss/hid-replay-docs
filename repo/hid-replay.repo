@@ -1,0 +1,11 @@
+[hid-replay]
+name=hid-replay for $releasever - $basearch
+baseurl=http://bentiss.github.io/hid-replay-docs/repo/$releasever/$basearch/
+enabled=1
+gpgcheck=0
+
+[hid-replay-source]
+name=hid-replay for $releasever - $basearch - Source
+baseurl=http://bentiss.github.io/hid-replay-docs/repo/$releasever/SRPMS/
+enabled=1
+gpgcheck=0

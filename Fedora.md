@@ -7,7 +7,7 @@ title: HID-replay - Fedora packages
 
 ## Automatic instructions
 You can grab our [.repo](repo/hid-replay.repo):
-	#> wget http://bentiss.github.io/hid-replay-docs/repo/hid-replay.repo -o /etc/yum.repos.d/hid-replay.repo
+	#> curl http://bentiss.github.io/hid-replay-docs/repo/hid-replay.repo --output /etc/yum.repos.d/hid-replay.repo
 
 Then you can install it through:
 	#> yum install hid-replay

@@ -3,7 +3,7 @@
 args=$@
 current_dir=$(pwd)
 destdir=${current_dir}/repo
-archs="i686 x86_64 SRPMS"
+archs="i386 x86_64 SRPMS"
 releases="17 18 19"
 md_target=${current_dir}/Fedora.md
 

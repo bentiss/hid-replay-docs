@@ -15,16 +15,16 @@ Then you can install it through:
 ## Manual downloading
 
 ### Fedora 17
-* [hid-replay-0.3-1.fc17.i686.rpm](repo/17/i386/hid-replay-0.3-1.fc17.i686.rpm)
-* [hid-replay-0.3-1.fc17.x86_64.rpm](repo/17/x86_64/hid-replay-0.3-1.fc17.x86_64.rpm)
-* [hid-replay-0.3-1.fc17.src.rpm](repo/17/SRPMS/hid-replay-0.3-1.fc17.src.rpm)
+* [hid-replay-0.5-1.fc17.i686.rpm](repo/17/i386/hid-replay-0.5-1.fc17.i686.rpm)
+* [hid-replay-0.5-1.fc17.x86_64.rpm](repo/17/x86_64/hid-replay-0.5-1.fc17.x86_64.rpm)
+* [hid-replay-0.5-1.fc17.src.rpm](repo/17/SRPMS/hid-replay-0.5-1.fc17.src.rpm)
 
 ### Fedora 18
-* [hid-replay-0.3-1.fc18.i686.rpm](repo/18/i386/hid-replay-0.3-1.fc18.i686.rpm)
-* [hid-replay-0.3-1.fc18.x86_64.rpm](repo/18/x86_64/hid-replay-0.3-1.fc18.x86_64.rpm)
-* [hid-replay-0.3-1.fc18.src.rpm](repo/18/SRPMS/hid-replay-0.3-1.fc18.src.rpm)
+* [hid-replay-0.5-1.fc18.i686.rpm](repo/18/i386/hid-replay-0.5-1.fc18.i686.rpm)
+* [hid-replay-0.5-1.fc18.x86_64.rpm](repo/18/x86_64/hid-replay-0.5-1.fc18.x86_64.rpm)
+* [hid-replay-0.5-1.fc18.src.rpm](repo/18/SRPMS/hid-replay-0.5-1.fc18.src.rpm)
 
 ### Fedora 19
-* [hid-replay-0.3-1.fc19.i686.rpm](repo/19/i386/hid-replay-0.3-1.fc19.i686.rpm)
-* [hid-replay-0.3-1.fc19.x86_64.rpm](repo/19/x86_64/hid-replay-0.3-1.fc19.x86_64.rpm)
-* [hid-replay-0.3-1.fc19.src.rpm](repo/19/SRPMS/hid-replay-0.3-1.fc19.src.rpm)
+* [hid-replay-0.5-1.fc19.i686.rpm](repo/19/i386/hid-replay-0.5-1.fc19.i686.rpm)
+* [hid-replay-0.5-1.fc19.x86_64.rpm](repo/19/x86_64/hid-replay-0.5-1.fc19.x86_64.rpm)
+* [hid-replay-0.5-1.fc19.src.rpm](repo/19/SRPMS/hid-replay-0.5-1.fc19.src.rpm)

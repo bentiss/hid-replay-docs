@@ -38,6 +38,9 @@ is just to replay events, have a look at evemu:
 #### Fedora
 If you are running Fedora, see our packages [here](Fedora.html).
 
+#### RHEL 6
+If you are running RHEL 6, see our packages [here](RHEL.html).
+
 #### From the source
 If you want to compile from the source:
 

@@ -1,0 +1,11 @@
+[hid-replay]
+name=hid-replay for RHEL $releasever - $basearch
+baseurl=http://bentiss.github.io/hid-replay-docs/repo/RHEL-6.4/$basearch/
+enabled=1
+gpgcheck=0
+
+[hid-replay-source]
+name=hid-replay for RHEL $releasever - $basearch - Source
+baseurl=http://bentiss.github.io/hid-replay-docs/repo/RHEL-6.4/SRPMS/
+enabled=1
+gpgcheck=0

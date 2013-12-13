@@ -3,8 +3,8 @@
 args=$@
 current_dir=$(pwd)
 destdir=${current_dir}/repo
-archs="i386 x86_64 SRPMS"
-releases="17 18 19"
+archs="armhfp i386 x86_64 SRPMS"
+releases="17 18 19 20"
 rhel_releases="RHEL-6.4"
 md_target=${current_dir}/Fedora.md
 rhel_md_target=${current_dir}/RHEL.md
@@ -43,9 +43,13 @@ then
 	do
 		for arch in $archs
 		do
-			pushd ${destdir}/${release}/${arch} >/dev/null 2>&1
-			createrepo .
-			popd >/dev/null 2>&1
+			WD=${destdir}/${release}/${arch}
+			if [ -e $WD ]
+			then
+				pushd ${WD} >/dev/null 2>&1
+				createrepo .
+				popd >/dev/null 2>&1
+			fi
 		done
 	done
 fi
@@ -74,10 +78,14 @@ do
 	echo "### Fedora ${release}" >> ${md_target} 
 	for arch in $archs
 	do
-		pushd ${destdir}/${release}/${arch} >/dev/null 2>&1
-		rpm=$(ls -t hid-replay-[0-9]*.rpm | head -n 1)
-		echo "* [${rpm}](repo/${release}/${arch}/${rpm})" >> ${md_target}
-		popd >/dev/null 2>&1
+		WD=${destdir}/${release}/${arch}
+		if [ -e $WD ]
+		then
+			pushd ${WD} >/dev/null 2>&1
+			rpm=$(ls -v hid-replay-[0-9]*.rpm | tail -n 1)
+			echo "* [${rpm}](repo/${release}/${arch}/${rpm})" >> ${md_target}
+			popd >/dev/null 2>&1
+		fi
 	done
 done
 
@@ -87,9 +95,13 @@ then
 	do
 		for arch in $archs
 		do
-			pushd ${destdir}/${release}/${arch} >/dev/null 2>&1
-			createrepo .
-			popd >/dev/null 2>&1
+			WD=${destdir}/${release}/${arch}
+			if [ -e $WD ]
+			then
+				pushd ${WD} >/dev/null 2>&1
+				createrepo .
+				popd >/dev/null 2>&1
+			fi
 		done
 	done
 fi
@@ -118,10 +130,14 @@ do
 	echo "### ${release}" >> ${rhel_md_target} 
 	for arch in $archs
 	do
-		pushd ${destdir}/${release}/${arch} >/dev/null 2>&1
-		rpm=$(ls -t hid-replay-[0-9]*.rpm | head -n 1)
-		echo "* [${rpm}](repo/${release}/${arch}/${rpm})" >> ${rhel_md_target}
-		popd >/dev/null 2>&1
+		WD=${destdir}/${release}/${arch}
+		if [ -e $WD ]
+		then
+			pushd ${WD} >/dev/null 2>&1
+			rpm=$(ls -v hid-replay-[0-9]*.rpm | tail -n 1)
+			echo "* [${rpm}](repo/${release}/${arch}/${rpm})" >> ${rhel_md_target}
+			popd >/dev/null 2>&1
+		fi
 	done
 done
 

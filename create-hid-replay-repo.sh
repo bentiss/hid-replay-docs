@@ -4,7 +4,7 @@ args=$@
 current_dir=$(pwd)
 destdir=${current_dir}/repo
 archs="armhfp i386 x86_64 SRPMS"
-releases="17 18 19 20"
+releases="20 19 18 17"
 rhel_releases="RHEL-6.4"
 md_target=${current_dir}/Fedora.md
 rhel_md_target=${current_dir}/RHEL.md
@@ -64,9 +64,11 @@ title: HID-replay - Fedora packages
 
 ## Automatic instructions
 You can grab our [.repo](repo/hid-replay.repo):
+
 	#> curl http://bentiss.github.io/hid-replay-docs/repo/hid-replay.repo --output /etc/yum.repos.d/hid-replay.repo
 
 Then you can install it through:
+
 	#> yum install hid-replay
 
 ## Manual downloading

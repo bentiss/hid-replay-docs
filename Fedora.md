@@ -5,34 +5,26 @@ title: HID-replay - Fedora packages
 
 # Fedora
 
-## Automatic instructions
-You can grab our [.repo](repo/hid-replay.repo):
+As of now, all the builds are created on the hid-replay [copr](https://copr.fedoraproject.org/coprs/bentiss/hid-replay/)
 
-	#> curl http://bentiss.github.io/hid-replay-docs/repo/hid-replay.repo --output /etc/yum.repos.d/hid-replay.repo
+## Automatic installation of the copr repo (Fedora 20 and up)
+You first have to install dnf-plugins-core:
+
+	#> dnf install -y dnf-plugins-core
+
+Then enable the repo:
+
+	#> dnf copr enable bentiss/mtdiag-qt
+
+And finally install hid-replay:
+
+	#> dnf install hid-replay
+
+## Manual install of the copr repo
+The [.repo](repo/hid-replay.repo) can also be grabbed from the webpage (replace fedora-20 with the appropriate version, or refer to the [copr](https://copr.fedoraproject.org/coprs/bentiss/hid-replay/) page)
+
+	#> curl https://copr.fedoraproject.org/coprs/bentiss/hid-replay/repo/fedora-20/bentiss-hid-replay-fedora-20.repo --output /etc/yum.repos.d/hid-replay.repo
 
 Then you can install it through:
 
 	#> yum install hid-replay
-
-## Manual downloading
-
-### Fedora 20
-* [hid-replay-0.6-1.fc20.armv7hl.rpm](repo/20/armhfp/hid-replay-0.6-1.fc20.armv7hl.rpm)
-* [hid-replay-0.6-1.fc20.i686.rpm](repo/20/i386/hid-replay-0.6-1.fc20.i686.rpm)
-* [hid-replay-0.6-1.fc20.x86_64.rpm](repo/20/x86_64/hid-replay-0.6-1.fc20.x86_64.rpm)
-* [hid-replay-0.6-1.fc20.src.rpm](repo/20/SRPMS/hid-replay-0.6-1.fc20.src.rpm)
-
-### Fedora 19
-* [hid-replay-0.6-1.fc19.i686.rpm](repo/19/i386/hid-replay-0.6-1.fc19.i686.rpm)
-* [hid-replay-0.6-1.fc19.x86_64.rpm](repo/19/x86_64/hid-replay-0.6-1.fc19.x86_64.rpm)
-* [hid-replay-0.6-1.fc19.src.rpm](repo/19/SRPMS/hid-replay-0.6-1.fc19.src.rpm)
-
-### Fedora 18
-* [hid-replay-0.6-1.fc18.i686.rpm](repo/18/i386/hid-replay-0.6-1.fc18.i686.rpm)
-* [hid-replay-0.6-1.fc18.x86_64.rpm](repo/18/x86_64/hid-replay-0.6-1.fc18.x86_64.rpm)
-* [hid-replay-0.6-1.fc18.src.rpm](repo/18/SRPMS/hid-replay-0.6-1.fc18.src.rpm)
-
-### Fedora 17
-* [hid-replay-0.5-1.fc17.i686.rpm](repo/17/i386/hid-replay-0.5-1.fc17.i686.rpm)
-* [hid-replay-0.5-1.fc17.x86_64.rpm](repo/17/x86_64/hid-replay-0.5-1.fc17.x86_64.rpm)
-* [hid-replay-0.5-1.fc17.src.rpm](repo/17/SRPMS/hid-replay-0.5-1.fc17.src.rpm)

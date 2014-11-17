@@ -1,11 +1,6 @@
-[hid-replay]
-name=hid-replay for $releasever - $basearch
-baseurl=http://bentiss.github.io/hid-replay-docs/repo/$releasever/$basearch/
-enabled=1
+[bentiss-hid-replay]
+name=Copr repo for hid-replay owned by bentiss
+baseurl=http://copr-be.cloud.fedoraproject.org/results/bentiss/hid-replay/fedora-$releasever-$basearch/
+skip_if_unavailable=True
 gpgcheck=0
-
-[hid-replay-source]
-name=hid-replay for $releasever - $basearch - Source
-baseurl=http://bentiss.github.io/hid-replay-docs/repo/$releasever/SRPMS/
 enabled=1
-gpgcheck=0

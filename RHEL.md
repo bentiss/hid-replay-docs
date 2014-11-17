@@ -7,24 +7,21 @@ title: HID-replay - RHEL packages
 
 As of now, all the builds are created on the hid-replay [copr](https://copr.fedoraproject.org/coprs/bentiss/hid-replay/)
 
-## Automatic installation of the copr repo (RHEL 7 and up)
-You first have to install dnf-plugins-core:
+## Manual install of the copr repo for RHEL 7
+The [.repo](https://copr.fedoraproject.org/coprs/bentiss/hid-replay/repo/epel-7/bentiss-hid-replay-epel-7.repo) can be grabbed with the following command
 
-	#> dnf install -y dnf-plugins-core
+	#> curl https://copr.fedoraproject.org/coprs/bentiss/hid-replay/repo/epel-7/bentiss-hid-replay-epel-7.repo --output /etc/yum.repos.d/hid-replay.repo
 
-Then enable the repo:
+Then you can install it through:
 
-	#> dnf copr enable bentiss/mtdiag-qt
+	#> yum install hid-replay
 
-And finally install hid-replay:
-
-	#> dnf install hid-replay
-
-## Manual install of the copr repo
-The [.repo](repo/hid-replay.repo) can also be grabbed from the webpage (replace epel-6 with the appropriate version, or refer to the [copr](https://copr.fedoraproject.org/coprs/bentiss/hid-replay/) page)
+## Manual install of the copr repo for RHEL 6
+The [.repo](https://copr.fedoraproject.org/coprs/bentiss/hid-replay/repo/epel-6/bentiss-hid-replay-epel-6.repo) can be grabbed with the following command
 
 	#> curl https://copr.fedoraproject.org/coprs/bentiss/hid-replay/repo/epel-6/bentiss-hid-replay-epel-6.repo --output /etc/yum.repos.d/hid-replay.repo
 
 Then you can install it through:
 
 	#> yum install hid-replay
+

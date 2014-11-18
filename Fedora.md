@@ -14,7 +14,7 @@ You first have to install dnf-plugins-core:
 
 Then enable the repo:
 
-	#> dnf copr enable bentiss/mtdiag-qt
+	#> dnf copr enable bentiss/hid-replay
 
 And finally install hid-replay:
 

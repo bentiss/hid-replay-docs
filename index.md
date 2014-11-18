@@ -74,6 +74,7 @@ If you are sure to want to run it, you need to have a at least a
 3.6 kernel and te module uhid loaded.
 
 The syntax is the following:
+
 	#> hid-replay mydevice.hid
 
 If everything is correct, the new virtual device will appear, and

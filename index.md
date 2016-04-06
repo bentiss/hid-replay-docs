@@ -36,10 +36,14 @@ is just to replay events, have a look at evemu:
 ## Getting it:
 
 #### Fedora
-If you are running Fedora, see our packages [here](Fedora.html).
+If you are running Fedora, *hid-replay* is now packaged directly in the distribution:
 
-#### RHEL
-If you are running RHEL, see our packages [here](RHEL.html).
+	$> sudo dnf install hid-replay
+
+#### RHEL/CentOS
+*hid-replay* is now in [epel](https://fedoraproject.org/wiki/EPEL).
+
+	$> sudo yum install hid-replay
 
 #### From the source
 If you want to compile from the source:

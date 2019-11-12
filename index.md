@@ -3,7 +3,19 @@ layout: default
 title: HID-replay
 ---
 
-# HID replay - HID recorder for Linux
+# HID-replay
+
+
+## This repository is obsolete
+
+Users should instead use the tools from
+the [`hid-tools`](https://gitlab.freedesktop.org/libevdev/hid-tools/)
+repository, located at
+[https://gitlab.freedesktop.org/libevdev/hid-tools/](https://gitlab.freedesktop.org/libevdev/hid-tools/).
+
+The information below is kept for archival purposes.
+
+## Info
 
 `hid-recorder` captures hidraw events, i.e. the raw events emited
 by the HID device before the processing in the kernel.
